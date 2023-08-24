@@ -75,7 +75,7 @@ const Navbars = ({getShoeDetails,addToCart}) => {
 
       <div>
         <Link to='/'>
-          <StyledLogo src='./e-commerce-website/img/logo.png'  alt="" />
+          <StyledLogo src='./e-commerce-Website/img/logo.png'  alt="" />
         </Link>
       </div>
       <div>
