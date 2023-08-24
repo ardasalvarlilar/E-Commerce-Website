@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/e-Commerce-Website/static/css/main.6f3def35.css",
-    "main.js": "/e-Commerce-Website/static/js/main.f3a7a0a4.js",
-    "static/media/revicons.eot": "/e-Commerce-Website/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/e-Commerce-Website/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/e-Commerce-Website/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/slick.svg": "/e-Commerce-Website/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/e-Commerce-Website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/e-Commerce-Website/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/e-Commerce-Website/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/e-Commerce-Website/index.html",
-    "main.6f3def35.css.map": "/e-Commerce-Website/static/css/main.6f3def35.css.map",
-    "main.f3a7a0a4.js.map": "/e-Commerce-Website/static/js/main.f3a7a0a4.js.map"
+    "main.css": "/e-commerce-cebsite/static/css/main.57c7fd54.css",
+    "main.js": "/e-commerce-cebsite/static/js/main.7830e7f6.js",
+    "static/media/revicons.eot": "/e-commerce-cebsite/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/e-commerce-cebsite/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/e-commerce-cebsite/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/slick.svg": "/e-commerce-cebsite/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/e-commerce-cebsite/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/e-commerce-cebsite/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/e-commerce-cebsite/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/e-commerce-cebsite/index.html",
+    "main.57c7fd54.css.map": "/e-commerce-cebsite/static/css/main.57c7fd54.css.map",
+    "main.7830e7f6.js.map": "/e-commerce-cebsite/static/js/main.7830e7f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f3def35.css",
-    "static/js/main.f3a7a0a4.js"
+    "static/css/main.57c7fd54.css",
+    "static/js/main.7830e7f6.js"
   ]
 }
