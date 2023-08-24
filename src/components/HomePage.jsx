@@ -10,7 +10,7 @@ const HomePage = () => {
       <StyledMain>
         <StyledSpanFirst>NIKE SHOES</StyledSpanFirst>
         <StyledMainImgDiv>
-          <StyledMainImg src='./E-Commerce-Website/img/alphaflyLending.png' alt="" />
+          <StyledMainImg src='./e-Commerce-Website/img/alphaflyLending.png' alt="" />
         </StyledMainImgDiv>
         <StyledSpanSecond>COLLECTIONS</StyledSpanSecond>
         <Collection to='/alphafly'>
