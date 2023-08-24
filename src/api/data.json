@@ -6,7 +6,7 @@
     "type": "shoe",
     "title": "Nike Blazer Phantom Mid",
     "price": 150,
-    "image": "./img/blazer-mid-77.png"
+    "image": "./E-Commerce-Website/img/blazer-mid-77.png"
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "type": "shoe",
     "title": "Nike Dunk Low",
     "price": 150,
-    "image": "./img/air-jordan-1.png"
+    "image": "./E-Commerce-Website/img/air-jordan-1.png"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "type": "shoe",
     "price": 125,
     "title": "Nike Go FlyEase",
-    "image": "./img/go-flyease.png"
+    "image": "./E-Commerce-Website/img/go-flyease.png"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "type": "shoe",
     "title": "Nike Air Force 1 07",
     "price": 110,
-    "image": "./img/air-force-1.png"
+    "image": "./E-Commerce-Website/img/air-force-1.png"
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "type": "shoe",
     "title": "Air Jordan 13 Retro",
     "price": 200,
-    "image": "./img/air-jordan-13.png"
+    "image": "./E-Commerce-Website/img/air-jordan-13.png"
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "type": "shoe",
     "title": "LeBron XX",
     "price": 210,
-    "image": "./img/lebron-xx.png"
+    "image": "./E-Commerce-Website/img/lebron-xx.png"
   },
   {
     "id": 6,
@@ -60,7 +60,7 @@
     "type": "shoe",
     "title": "Luka 1",
     "price": 110,
-    "image": "./img/luka-1.png"
+    "image": "./E-Commerce-Website/img/luka-1.png"
   },
   {
     "id": 7,
@@ -69,7 +69,7 @@
     "type": "shoe",
     "title": "Freak 4 Greek Coastline",
     "price": 130,
-    "image": "./img/freak-4-greek-coastline.png"
+    "image": "./E-Commerce-Website/img/freak-4-greek-coastline.png"
   },
   {
     "id": 8,
@@ -78,7 +78,7 @@
     "type": "shoe",
     "title": "Sabrina 1 Ionic",
     "price": 130,
-    "image": "./img/sabrina-1.png"
+    "image": "./E-Commerce-Website/img/sabrina-1.png"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "type": "shoe",
     "title": "Nike Alphafly 2",
     "price": 275,
-    "image": "./img/alphafly-2-racing-.png"
+    "image": "./E-Commerce-Website/img/alphafly-2-racing-.png"
   },
   {
     "id": 10,
@@ -96,7 +96,7 @@
     "type": "shoe",
     "title": "Nike Air Zoom Maxfly",
     "price": 180,
-    "image": "./img/air-zoom-sprinting-.png"
+    "image": "./E-Commerce-Website/img/air-zoom-sprinting-.png"
   },
   {
     "id": 11,
@@ -105,7 +105,7 @@
     "type": "shoe",
     "title": "Nike Tempo",
     "price": 200,
-    "image": "./img/tempo-mens-running.png"
+    "image": "./E-Commerce-Website/img/tempo-mens-running.png"
   },
   {
     "id": 12,
@@ -114,7 +114,7 @@
     "type": "shoe",
     "title": "Nike Calm",
     "price": 50,
-    "image": "./img/calm-mens-slides.png"
+    "image": "./E-Commerce-Website/img/calm-mens-slides.png"
   },
   {
     "id": 13,
@@ -123,7 +123,7 @@
     "type": "shoe",
     "title": "Jordan Play",
     "price": 45,
-    "image": "./img/jordan-play-mens-slides-.png"
+    "image": "./E-Commerce-Website/img/jordan-play-mens-slides-.png"
   },
   {
     "id": 14,
@@ -132,7 +132,7 @@
     "type": "shoe",
     "title": "Nike Air Max 1",
     "price": 75,
-    "image": "./img/air-max-1-mens-slides.png"
+    "image": "./E-Commerce-Website/img/air-max-1-mens-slides.png"
   },
   {
     "id": 15,
@@ -141,7 +141,7 @@
     "type": "shoe",
     "title": "Nike Pegasus 40",
     "price": 130,
-    "image": "./img/pegasus-40-mens-running.png"
+    "image": "./E-Commerce-Website/img/pegasus-40-mens-running.png"
   },
   {
     "id": 16,
@@ -150,6 +150,6 @@
     "type": "shoe",
     "title": "Jordan Hydro 8 Retro",
     "price": 65,
-    "image": "./img/jordan-hydro-8-retro-slides.png"
+    "image": "./E-Commerce-Website/img/jordan-hydro-8-retro-slides.png"
   }
 ]

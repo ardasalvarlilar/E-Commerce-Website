@@ -135,7 +135,7 @@ useEffect(()=>{
     <StyledContainer>
       <Aside className='hidden p-8 border-r' showdiv={isDivVisible.toString()}>
         <div className='h-64 mt-14'>
-          <img src="./img/nikeTest.jpg" alt="" style={{width: '100%', borderRadius: '1.5rem'}} />
+          <img src="./E-Commerce-Website/img/nikeTest.jpg" alt="" style={{width: '100%', borderRadius: '1.5rem'}} />
         </div>
         <StyledHeader2 ref={headerRef} showheader={isDivVisible.toString()}>FOOTWEAR'S</StyledHeader2>
         <div className= 'mt-10'>
