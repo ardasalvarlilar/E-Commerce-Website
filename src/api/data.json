@@ -1,0 +1,155 @@
+[
+  {
+    "id": 0,
+    "gender": "men",
+    "category": "lifestyle",
+    "type": "shoe",
+    "title": "Nike Blazer Phantom Mid",
+    "price": 150,
+    "image": "./img/blazer-mid-77.png"
+  },
+  {
+    "id": 1,
+    "gender": "men",
+    "category": "lifestyle",
+    "type": "shoe",
+    "title": "Nike Dunk Low",
+    "price": 150,
+    "image": "./img/air-jordan-1.png"
+  },
+  {
+    "id": 2,
+    "gender": "men",
+    "category": "lifestyle",
+    "type": "shoe",
+    "price": 125,
+    "title": "Nike Go FlyEase",
+    "image": "./img/go-flyease.png"
+  },
+  {
+    "id": 3,
+    "gender": "men",
+    "category": "lifestyle",
+    "type": "shoe",
+    "title": "Nike Air Force 1 07",
+    "price": 110,
+    "image": "./img/air-force-1.png"
+  },
+  {
+    "id": 4,
+    "gender": "men",
+    "category":"lifestyle",
+    "type": "shoe",
+    "title": "Air Jordan 13 Retro",
+    "price": 200,
+    "image": "./img/air-jordan-13.png"
+  },
+  {
+    "id": 5,
+    "gender": "men",
+    "category": "basketball",
+    "type": "shoe",
+    "title": "LeBron XX",
+    "price": 210,
+    "image": "./img/lebron-xx.png"
+  },
+  {
+    "id": 6,
+    "gender": "men",
+    "category": "basketball",
+    "type": "shoe",
+    "title": "Luka 1",
+    "price": 110,
+    "image": "./img/luka-1.png"
+  },
+  {
+    "id": 7,
+    "gender": "men",
+    "category": "basketball",
+    "type": "shoe",
+    "title": "Freak 4 Greek Coastline",
+    "price": 130,
+    "image": "./img/freak-4-greek-coastline.png"
+  },
+  {
+    "id": 8,
+    "gender": "men",
+    "category": "basketball",
+    "type": "shoe",
+    "title": "Sabrina 1 Ionic",
+    "price": 130,
+    "image": "./img/sabrina-1.png"
+  },
+  {
+    "id": 9,
+    "gender": "men",
+    "category": "running",
+    "type": "shoe",
+    "title": "Nike Alphafly 2",
+    "price": 275,
+    "image": "./img/alphafly-2-racing-.png"
+  },
+  {
+    "id": 10,
+    "gender": "men",
+    "category": "running",
+    "type": "shoe",
+    "title": "Nike Air Zoom Maxfly",
+    "price": 180,
+    "image": "./img/air-zoom-sprinting-.png"
+  },
+  {
+    "id": 11,
+    "gender": "men",
+    "category": "running",
+    "type": "shoe",
+    "title": "Nike Tempo",
+    "price": 200,
+    "image": "./img/tempo-mens-running.png"
+  },
+  {
+    "id": 12,
+    "gender": "men",
+    "category": "slide",
+    "type": "shoe",
+    "title": "Nike Calm",
+    "price": 50,
+    "image": "./img/calm-mens-slides.png"
+  },
+  {
+    "id": 13,
+    "gender": "men",
+    "category": "slide",
+    "type": "shoe",
+    "title": "Jordan Play",
+    "price": 45,
+    "image": "./img/jordan-play-mens-slides-.png"
+  },
+  {
+    "id": 14,
+    "gender": "men",
+    "category": "slide",
+    "type": "shoe",
+    "title": "Nike Air Max 1",
+    "price": 75,
+    "image": "./img/air-max-1-mens-slides.png"
+  },
+  {
+    "id": 15,
+    "gender": "men",
+    "category": "running",
+    "type": "shoe",
+    "title": "Nike Pegasus 40",
+    "price": 130,
+    "image": "./img/pegasus-40-mens-running.png"
+  },
+  {
+    "id": 16,
+    "gender": "men",
+    "category": "slide",
+    "type": "shoe",
+    "title": "Jordan Hydro 8 Retro",
+    "price": 65,
+    "image": "./img/jordan-hydro-8-retro-slides.png"
+  }
+]

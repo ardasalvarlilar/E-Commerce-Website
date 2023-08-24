@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route} from 'react-router-dom';
+import HomePage from './components/HomePage';
+import Shop from './components/Shop';
+import Navbars from './components/Navbars';
+import Basketball from './components/Basketball'
+import Slides from './components/Slides'
+import Running from './components/Running'
+import Lifestyle from './components/Lifestyle';
+import Carts from './components/Carts'
+import Alphafly from './components/Alphafly'
+import './app.css'
+import 'react-multi-carousel/lib/styles.css';
+import { StyledNav } from './components/StyledComponents';
+import './components/tailwind.css'
+import { useState, useEffect } from 'react';
+import data from './api/data.json'
 function App() {
+
+  const [cartCount, setCartCount] = useState(0)
+  const [getShoeDetails, setGetShoeDetails] = useState([])
+
+
+  const increment = () =>{
+  setCartCount((prevCount) => prevCount + setGetShoeDetails.length)
+  }
+
+
+  const addToCart = e => {
+  const itemId = parseInt(e.target.id);
+  increment()
+  const selectedItem = data.find(item => item.id === itemId);
+  setGetShoeDetails(prevDetails => [...prevDetails, selectedItem]);
+};
+
+
+useEffect(() => {
+  console.log(getShoeDetails);
+}, [getShoeDetails]);
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <StyledNav>
+      <Navbars getShoeDetails={getShoeDetails} addToCart={addToCart}/>
+    </StyledNav>
+      <Routes >
+        <Route path='/' element={<HomePage />}  />
+        <Route path='/shop' element={<Shop cartCount={cartCount} getShoeDetails={getShoeDetails} addToCart={addToCart} />}/>
+        <Route path='/lifestyle' element={<Lifestyle getShoeDetails={getShoeDetails} addToCart={addToCart} />}/>
+        <Route path='/basketball' element={<Basketball getShoeDetails={getShoeDetails} addToCart={addToCart} />} />
+        <Route path='/slides' element={<Slides   getShoeDetails={getShoeDetails} addToCart={addToCart} />}/>
+        <Route path='/running' element={<Running  getShoeDetails={getShoeDetails} addToCart={addToCart}  />}/>
+        <Route path='/cart' element={<Carts getShoeDetails={getShoeDetails} setCartCount={setCartCount} setGetShoeDetails={setGetShoeDetails} />}/>
+        <Route path='/alphafly' element={<Alphafly/>} />
+      </Routes>
+    </>
   );
 }
 
