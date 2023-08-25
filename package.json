@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "0.1.0",
-  "homepage": "https://ardasalvarlilar.io/e-commerce-Website",
+  "homepage": "https://ardasalvarlilar.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
