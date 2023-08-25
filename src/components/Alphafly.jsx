@@ -180,13 +180,13 @@ const Alphafly = () => {
           </div>
 
           <div className="flex flex-col items-center forMiddle">
-            <h2 className='text-xl text-hoverColor'>choose your color for top of the shoe</h2>
+            <h2 className='text-xl text-hoverColor'>choose your color for middle of the shoe</h2>
             <input type="color" name="" id="" onChange={(event) => setOwnMiddleColor(event.target.value)} />
           </div>
 
 
           <div className="flex flex-col items-center forBottom">
-            <h2 className='text-xl text-hoverColor'>choose your color for top of the shoe</h2>
+            <h2 className='text-xl text-hoverColor'>choose your color for bottom of the shoe</h2>
             <input type="color" name="" id="" onChange={(event) => setOwnBottomColor(event.target.value)} />
           </div>
 
