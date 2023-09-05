@@ -6,13 +6,13 @@ import {TiSocialYoutubeCircular} from 'react-icons/ti'
 
 const Footers = () => {
   return (
-    <div className='p-8 bg-footer'>
+    <div className='p-8 mt-12 bg-footer'>
       
       <div className='grid grid-cols-2 contain'>
 
         <div className="flex items-start gap-32 for-left">
           <div>
-            <ul className='flex flex-col gap-4 font-sans text-sm text-white list-none'>
+            <ul className='flex flex-col gap-2 font-sans text-sm text-white list-none md:gap-4'>
               <li><a href="# " className='text-sm font-bold'>GIFT CARDS</a></li>
               <li><a href="# " className='text-sm font-bold'>PROMOTIONS</a></li>
               <li><a href="# " className='text-sm font-bold'>FIND A STORE</a></li>
@@ -23,7 +23,7 @@ const Footers = () => {
           </div>
 
           <div>
-            <ul className='flex flex-col gap-2 font-sans list-none'>
+            <ul className='flex flex-col gap-1 font-sans list-none md:gap-2'>
               <li><a href="#  " className='text-sm text-white'>GET HELP</a></li>
               <li><a href="#  " className='text-xs text-footerColor '>Order Status</a></li>
               <li><a href="#  " className='text-xs text-footerColor '>Shipping and Delivery</a></li>
@@ -35,8 +35,8 @@ const Footers = () => {
             </ul>
           </div>
 
-          <div>
-            <ul className='flex flex-col gap-2 font-sans list-none'>
+          <div className='hidden md:block'>
+            <ul className='flex flex-col gap-1 font-sans list-none md:gap-2'>
               <li><a href="#  " className='text-sm text-white'>ABOUT NIKE</a></li>
               <li><a href="#  " className='text-xs text-footerColor'>News</a></li>
               <li><a href="#  " className='text-xs text-footerColor'>Careers</a></li>
@@ -51,7 +51,7 @@ const Footers = () => {
         <div className="flex flex-col justify-between for-right">
 
           <div className='flex items-center justify-end text-white for-top'>
-            <ul className='flex gap-3'>
+            <ul className='flex flex-col gap-1 md:gap-3 md:flex-row'>
               <li> <AiFillTwitterCircle size={32}  color='#7e7e7e' /> </li>
               <li> <BsFacebook size={32} color='#7e7e7e' /> </li>
               <li> <TiSocialYoutubeCircular size={32} color='#7e7e7e' /> </li>
@@ -59,8 +59,8 @@ const Footers = () => {
             </ul>
           </div>
 
-          <div className="flex justify-end for-bottom">
-            <ul className='flex items-center gap-6 text-sm text-footerColor'>
+          <div className="justify-end hidden  for-bottom md:flex">
+            <ul className='flex flex-col items-center gap-2 text-sm md:gap-6 md:flex-row text-footerColor'>
               <li>Guides</li>
               <li>Terms of Sale</li>
               <li>Terms of Use</li>
@@ -75,7 +75,7 @@ const Footers = () => {
 
         <div className='flex items-end justify-between'>
 
-          <div className='flex gap-6 mt-20 text-xs'>
+          <div className='flex gap-2 mt-20 text-xs md:gap-6'>
             <p className='flex items-center text-white'><MdLocationOn color='white' size={16}/>United States</p>
             <p className='text-footerColor'>® 2023 Nike, Inc. All Rights Reserved</p>
           </div>

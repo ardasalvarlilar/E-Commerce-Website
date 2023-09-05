@@ -13,17 +13,7 @@ const StyledLogo = styled.img`
   width: 50px;
   height: 20px;
 `
-const StlyedUl = styled.ul`
-  display: flex;
-  list-style-type: none;
-  gap: 30px;
 
-
-  @media (max-width: 768px){
-    flex-direction: column;
-  }
-
-`
 const HamburgerWrap = styled.div`
 display: none;
   @media (max-width: 1024px){
@@ -57,19 +47,6 @@ const StyledNav = styled.nav`
     ? 'linear-gradient(to right, #e94c89, #bea3d7)'
     : 'white'};
 
-  @media (max-width: 1024px){
-    flex-direction: column;
-    position: absolute;
-    background: transparent;
-    backdrop-filter: blur(25px);
-    margin-left: 150px;
-  }
-
-`
-const StyledDiv = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 30px;
 `
 const StyledLink = styled(NavLink)`
   color: black;
@@ -128,6 +105,10 @@ const StyledForSearch = styled.div`
   padding: ${props => props.isusersearching === 'true' ? '20px 50px' : '0'};
   height: ${props => props.isusersearching ==='true' ? '100vh' : '0%' };
   margin-bottom: ${props => props.usersearched.length !== 0 ? '700px' : '0px'};
+
+  @media (max-width: 1024px) {
+    display: none  !important;
+  }
 `
 
 //navbar end
@@ -164,6 +145,7 @@ const StyledMainImgDiv = styled.div`
   z-index: 10;
   
   @media (max-width: 768px){
+    margin-top: 100px;
     width: 100%;
   }
 `
@@ -190,6 +172,7 @@ const StyledSpanFirst = styled.h1`
     position: static
   }
   @media (max-width: 	768px) {
+    margin-top: 100px;
     font-size: 2rem;
     top: 20px;
     left: 100px;
@@ -256,6 +239,7 @@ const Collection = styled(Link)`
   }
 
   @media (max-width: 768px){
+    margin-top: 50px;
     font-size: 1rem;
     bottom: 50px;
   }
@@ -315,7 +299,6 @@ const StyledCarouselItemDiv = styled.div`
 //SHOP SECTION COMPONENTS
 const StyledContainer = styled.main`
   display: flex;
-  padding: 20px 50px;
   background-color: white;
   min-height: 100vh;
 `
@@ -326,6 +309,9 @@ const Aside = styled.aside`
   /* display: ${props => props.showDiv ? 'block' : 'none'}; */
   display: block;
   transition: linear 1s;
+  @media (max-width: 1024){
+    display: none!important;
+  }
 `
 const Section = styled.section`
   width: ${props => props.setwidth === 'true' ? '70%' : '100%'};
@@ -364,7 +350,7 @@ const StyledGridDiv = styled.div`
   padding: 50px;
 
   @media (max-width: 1535px){
-    grid-template-columns: repeat(3,1fr)!important;
+    grid-template-columns: ${props => props.gridlayout === 'true' ? 'repeat(3,1fr)!important' : 'repeat(4,1fr)!important'};
   }
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -385,9 +371,9 @@ const StyledGridDivElement = styled.div`
   align-items: center;
   gap: 1rem;
 
-  @media (max-width: 640px){
-    width: 200px;
-    height: 200px;
+  @media (max-width: 1024px) {
+    width: 230px;
+    height: 230px;
   }
 `
 const StyledGridDivElementImg = styled.img`
@@ -428,6 +414,15 @@ const StyledFilterBtn = styled.button`
     font-size: 40px;
     font-weight: 900;
     display: ${props => props.showheader === 'true' ? 'block' : 'none'};
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 640px) {
+      font-size: .65rem;
+    }
   `
 
   const StyledShopUl = styled.ul`
@@ -436,21 +431,41 @@ const StyledFilterBtn = styled.button`
     gap: 16px;
     font-size: 18px;
     display: ${props => props.showlist === 'true' ? 'block' : 'none'};
-    @media (min-width: 1024px) {
-      
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 640px) {
+      font-size: .65rem;
     }
   `
 
-  const StyledGridForPages = styled.main`
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    transition: linear 1s;
-    row-gap: 100px;
-    column-gap: 30px;
-    padding: 50px;
-    background-color: #fff;
-    min-height: 100vh;
-  `
+const StyledGridForPages = styled.main`
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: linear 1s;
+  row-gap: 100px;
+  column-gap: 30px;
+  padding: 50px;
+  background-color: #fff;
+  min-height: 100vh;
+
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
 
 
 const StyledBag = styled(BsFillHandbagFill)`
@@ -524,7 +539,7 @@ const AlphaflyA = styled.a`
 `
 
 // HOMEPAGE EXPORT
-export {HomeDiv,StyledNav,StyledLogo, StlyedUl,StyledDiv,StyledLink,StyledMain,StyledMainImg,StyledMainImgDiv,StyledSpanFirst,StyledSpanSecond,StyledBag,StyledBagSpan,StyledInputSearch,StyledInputSearchDiv,StyledForSearch,Collection,StyledHamburger,NavbarWrap,HamburgerWrap} // for navbar
+export {HomeDiv,StyledNav,StyledLogo,StyledLink,StyledMain,StyledMainImg,StyledMainImgDiv,StyledSpanFirst,StyledSpanSecond,StyledBag,StyledBagSpan,StyledInputSearch,StyledInputSearchDiv,StyledForSearch,Collection,StyledHamburger,NavbarWrap,HamburgerWrap} // for navbar
 export {StyledCarousel,StyledCarouselItem,StyledCarouselItemImg,StyledCarouselItemImgDiv,StyledCarouselItemDiv}//for carousel
 
 //SHOP PAGE EXPORT

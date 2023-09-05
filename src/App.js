@@ -1,4 +1,4 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, Navigate} from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Shop from './components/Shop';
 import Navbars from './components/Navbars';
@@ -12,12 +12,13 @@ import './app.css'
 import 'react-multi-carousel/lib/styles.css';
 import { StyledNav } from './components/StyledComponents';
 import './components/tailwind.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, } from 'react';
 import data from './api/data.json'
 function App() {
 
   const [cartCount, setCartCount] = useState(0)
   const [getShoeDetails, setGetShoeDetails] = useState([])
+  const [sendColorsCart, setSendColorsCart] = useState([])
 
 
   const increment = () =>{
@@ -30,8 +31,12 @@ function App() {
   increment()
   const selectedItem = data.find(item => item.id === itemId);
   setGetShoeDetails(prevDetails => [...prevDetails, selectedItem]);
+
+  
 };
 
+
+console.log(sendColorsCart)
 
 useEffect(() => {
   console.log(getShoeDetails);
@@ -51,7 +56,8 @@ useEffect(() => {
         <Route path='/slides' element={<Slides   getShoeDetails={getShoeDetails} addToCart={addToCart} />}/>
         <Route path='/running' element={<Running  getShoeDetails={getShoeDetails} addToCart={addToCart}  />}/>
         <Route path='/cart' element={<Carts getShoeDetails={getShoeDetails} setCartCount={setCartCount} setGetShoeDetails={setGetShoeDetails} />}/>
-        <Route path='/alphafly' element={<Alphafly/>} />
+        <Route path='/alphafly' element={<Alphafly setsendcolorscart={setSendColorsCart}  />} />
+        <Route path='/E-Commerce-Website' element={<Navigate to='/'/>}/>
       </Routes>
     </>
   );

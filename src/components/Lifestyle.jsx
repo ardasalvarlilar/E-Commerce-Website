@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyledGridForPages, StyledGridDivElementImg, StyledGridDivElement, StyledGridDivDesc } from './StyledComponents';
+import { StyledGridForPages, StyledGridDivElementImg, StyledGridDivElement, StyledGridDivDesc, StyledHeadings } from './StyledComponents';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import data from '../api/data.json';
 import Dropdown from 'react-dropdown';
@@ -52,22 +52,21 @@ let colorArrayIndex = colorArray2[buttonColor]
 
   return (
     <>
-    <div className='px-24 py-0 bg-white'>
-      <div className='flex justify-between py-5 px-14'>
-        <div>
-          <h1 className='text-2xl text-center'>BROWSE LIFESTYLE SHOES</h1>
-        </div>
-        <div>
-          <Dropdown options={options} value={'Sort By'} onChange={handleSortChange}>
+    <div className='px-0 bg-white lg:px-24 lg:py-0'>
+      <StyledHeadings>
+
+        <h1 className='mt-12 text-lg text-center lg:mt-0 lg:ml-16 sm:text-2xl'>BROWSE ALL FOOTWEARS</h1>
+        <div className='flex items-center mt-12 lg:mt-0 gap-7'>
+          <Dropdown options={options} value={'Sort By'} onChange={e => setSelectedSortOption(e.value)}>
             SORT BY<MdOutlineKeyboardArrowDown size={35} />
           </Dropdown>
         </div>
-      </div>
+      </StyledHeadings>
       <StyledGridForPages>
         {products.map((e, i) => {
 
           return (
-            <StyledGridDivElement className='grid-item' key={i} style={{ backgroundColor: colorArray2[e.id] }}>
+            <StyledGridDivElement className='mx-auto grid-item md:mx-0' key={i} style={{ backgroundColor: colorArray2[e.id] }}>
               <StyledGridDivElementImg src={e.image} alt="" />
               <StyledGridDivDesc>
                 <p>{e.title.toUpperCase()}</p>

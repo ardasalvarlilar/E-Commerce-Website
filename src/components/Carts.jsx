@@ -91,8 +91,8 @@ const couponDiscount = (event) => {
       <h1 className='text-5xl text-center'>YOUR CART</h1>
     </div>
     
-    <div className='flex pl-12 pr-16'>
-      <table className='w-8/12'>
+    <div className='flex flex-col pl-12 pr-16 lg:flex-row'>
+      <table className='w-12/12 lg:w-8/12'>
       <thead>
           <tr>
             <th >PRODUCT</th>
@@ -105,11 +105,11 @@ const couponDiscount = (event) => {
         <tbody>
         {groupedShoeDetails.map((e,i) => (
           <tr key={i} className='border-t border-b'>
-            <td className='flex items-center px-12'>
-              <div className='w-40 forImg'>
+            <td className='flex items-center px-4 md:px-12'>
+              <div className='w-32 h-[150] sm:w-40 sm:h-[200px] forImg'>
                 <img src={e.image} alt="" className='w-100' />
               </div>
-              <div>
+              <div className='hidden sm:block'>
                 <h2>{e.title}</h2>
                 <p>{e.category}</p>
               </div>
@@ -137,7 +137,7 @@ const couponDiscount = (event) => {
 
 
 
-      <div className='sticky w-4/12 pt-6 bg-gray-100 top-4 h-min checkout'>
+      <div className='sticky w-full pt-6 bg-gray-100 lg:w-4/12 lg:top-4 h-min checkout'>
         <div className='px-12 py-4'>
           <p>Order Summary</p>
         </div>

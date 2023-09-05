@@ -47,7 +47,7 @@ const MyCarousel = () => {
   return (
     <div style={{padding: '20px 50px'}}>
     <StyledCarousel {...settings}>
-      <CarouselItem shoeName="Air Force 1 '07" src='./E-Commerce-Website/>img/air-force-1.png' price="110" />
+      <CarouselItem shoeName="Air Force 1 '07" src='./E-Commerce-Website/img/air-force-1.png' price="110" />
       <CarouselItem shoeName="Air Jordan 1 Low" src='./E-Commerce-Website/img/air-jordan-1.png' price="110" />
       <CarouselItem shoeName="Air Jordan 13 Retro " src='./E-Commerce-Website/img/air-jordan-13.png' price="200" />
       <CarouselItem shoeName="Air Max 1" src='./E-Commerce-Website/img/air-max-1-mens-slides.png' price="75" />

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import {StyledContainer,Aside,Section,StyledButton,StyledFilter,StyledGridDiv,StyledGridDivElement,StyledGridDivElementImg,StyledGridDivDesc,StyledFilterBtn,StyledHeader2,StyledShopUl, AddToCartBtn,HamburgerWrap,StyledHeadings} from './StyledComponents'
+import {StyledContainer,Aside,Section,StyledButton,StyledFilter,StyledGridDiv,StyledGridDivElement,StyledGridDivElementImg,StyledGridDivDesc,StyledFilterBtn,StyledHeader2,StyledShopUl, AddToCartBtn,StyledHeadings} from './StyledComponents'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 import data from '../api/data.json'
 import './tailwind.css'
@@ -9,7 +9,6 @@ import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import './tailwind.css'
 import Footers from './Footers'
-import {RxHamburgerMenu} from 'react-icons/rx'
 const Shop = ({addToCart}) => {
 
   const colorArray2 = [
@@ -133,9 +132,11 @@ useEffect(()=>{
   return (
     <>
     <StyledContainer>
-      <Aside className='hidden p-8 border-r' showdiv={isDivVisible.toString()}>
-        <div className='h-64 mt-14'>
-          <img src="./E-Commerce-Website/img/nikeTest.jpg" alt="" style={{width: '100%', borderRadius: '1.5rem'}} />
+      <Aside className='flex items-center justify-center p-8 border-r ' showdiv={isDivVisible.toString()}>
+        <div className='hidden h-64 mt-14 lg:block'>
+          <img src="./E-Commerce-Website/img/nikeTest.jpg" alt=""  
+          className='w-100 rounded-3xl'
+           />
         </div>
         <StyledHeader2 ref={headerRef} showheader={isDivVisible.toString()}>FOOTWEAR'S</StyledHeader2>
         <div className= 'mt-10'>
@@ -156,13 +157,10 @@ useEffect(()=>{
         </div>
       </Aside>  
       <Section setwidth={isDivVisible.toString()}>
-      <HamburgerWrap>
-          <RxHamburgerMenu size={35}/>
-        </HamburgerWrap>
-        <StyledHeadings>
+        <StyledHeadings className='px-10 py-1'>
 
-          <h1 className='ml-16 text-2xl text-center'>BROWSE ALL FOOTWEARS</h1>
-          <div className='flex items-center gap-7'>
+          <h1 className='mt-12 text-lg text-center lg:mt-0 lg:ml-16 sm:text-2xl'>BROWSE ALL FOOTWEARS</h1>
+          <div className='flex items-center mt-12 lg:mt-0 gap-7'>
             <StyledButton onClick={handleButtonClick}>
             {isDivVisible ? 'HIDE FILTERS' : 'SHOW FILTERS'}
 
@@ -176,7 +174,7 @@ useEffect(()=>{
         </StyledHeadings>
         <StyledGridDiv gridlayout={gird.toString()}>
           {products.map((e,i)=>(
-            <StyledGridDivElement key={i} className="grid-item" style={{backgroundColor: colorArray2[e.id] }} >
+            <StyledGridDivElement key={i} className='mx-auto grid-item md:mx-0' style={{backgroundColor: colorArray2[e.id] }} >
               <StyledGridDivElementImg src={e.image} alt="" />
             <StyledGridDivDesc>
                 <p>{e.title.toUpperCase()}</p>

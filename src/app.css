@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Space+Grotesk:wght@500;600&family=Ubuntu&display=swap');
+@import url(https://db.onlinewebfonts.com/c/9f9eb7c275998682141691bcc52f3109?family=Helvetica);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+
+.image #svg{
+  position: absolute;
+  top: 0;
+  left: -12px;
+}
+.image #svg path{
+  mix-blend-mode: color;
+}
+.image #middle{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image #middle path{
+  mix-blend-mode: color;
+}
+
+.image #bottom{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image #bottom path{
+  mix-blend-mode: color;
+}
+
+
+/*!!!!!!  */
+
+.image #ownColorSvg{
+  position: absolute;
+  top: 0;
+  left: -12px;
+}
+.image #ownColorSvg path{
+  mix-blend-mode: color;
+}
+.image #ownColorMiddle{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image #ownColorMiddle path{
+  mix-blend-mode: color;
+}
+
+.image #ownColorBottom{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image #ownColorBottom path{
+  mix-blend-mode: color;
+}

@@ -1,6 +1,7 @@
 import React, {useState, useEffect,} from 'react'
-import {StyledNav,StyledLogo, StlyedUl,StyledDiv,StyledLink,StyledBag,StyledBagSpan,StyledInputSearch,StyledInputSearchDiv,StyledForSearch,StyledHamburger,NavbarWrap,HamburgerWrap} from './StyledComponents'
+import {StyledNav,StyledLink,StyledBag,StyledBagSpan,StyledInputSearch,StyledInputSearchDiv,StyledForSearch,} from './StyledComponents'
 import {BsSearch} from 'react-icons/bs'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useLocation } from 'react-router-dom'
 import {Link } from 'react-router-dom';
 import data from '../api/data.json'
@@ -64,22 +65,26 @@ const Navbars = ({getShoeDetails,addToCart}) => {
   setFilteredResults(matchedProducts);
 };
 
+const [nav, setNav] = useState(true)
+
+const handleNav = () => {
+  setNav(!nav)
+}
+
   return (
-    <NavbarWrap>
-      <HamburgerWrap>
-      <StyledHamburger size={32}/>
-      </HamburgerWrap>
-    <StyledNav style={{padding: '20px 50px'}} 
+    <>
+    <StyledNav
+    className='px-12 py-5'
     isusersearching = {isSearching.toString()}
     ishomepage={ishomepage.toString()}  >
 
       <div>
         <Link to='/'>
-          <img className='w-12 h-5' src='./E-Commerce-Website/logo.png'  alt="" />
+          <img className='w-12 h-5' src='./E-Commerce-Website/img/logo.png'  alt="" />
         </Link>
       </div>
       <div>
-        <StlyedUl>
+        <ul className='hidden gap-8 list-none lg:flex'  >
           <li>
             <StyledLink sent={sendColor} to='/'>Home</StyledLink>
           </li>
@@ -98,12 +103,13 @@ const Navbars = ({getShoeDetails,addToCart}) => {
           <li>
             <StyledLink sent={sendColor} to='/running' >Running</StyledLink>
           </li>
-        </StlyedUl>
+        </ul>
       </div>
-      <StyledDiv>
+      <div className='hidden lg:flex lg:tems-center lg:gap-6'>
       <StyledInputSearchDiv>
         <BsSearch size={30} className='cursor-pointer ' />
-        <StyledInputSearch type="text" placeholder='Search' onClick={searching}
+        <StyledInputSearch
+          type="text" placeholder='Search' onClick={searching}
         value={searchQuery} // Arama sorgusunu input değerine bağla
         onChange={handleSearch} // Arama sorgusu değiştiğinde çağrılacak fonksiyon
 
@@ -113,10 +119,48 @@ const Navbars = ({getShoeDetails,addToCart}) => {
           <StyledBag size={35}/>
           <StyledBagSpan istwodigit={getShoeDetails.length} > {getShoeDetails.length !== 0 ? getShoeDetails.length : null}</StyledBagSpan>
         </Link>
-      </StyledDiv>
+      </div>
+      <div className={!nav ? 'fixed top-0 left-0 w-[60%] border-r border-r-hoverColor h-full backdrop-blur-xl ease-in-out duration-500 z-10 shadow-md' : 'fixed left-[-120px]'}>
+        <div className='m-4'>
+          <Link to='/'>
+            <img className='w-12 h-5' src='./E-Commerce-Website/img/logo.png'  alt="" />
+          </Link>
+        </div>
+        <ul className='flex flex-col gap-8 p-4'>
+        <li>
+            <StyledLink sent={sendColor} to='/'>Home</StyledLink>
+          </li>
+          <li>
+            <StyledLink sent={sendColor} to='/shop' >Shop</StyledLink>
+          </li>
+          <li>
+            <StyledLink sent={sendColor} to='/lifestyle'>Lifestyle</StyledLink>
+          </li>
+          <li>
+            <StyledLink sent={sendColor} to='/basketball' >Basketball</StyledLink>
+          </li>
+          <li>
+            <StyledLink sent={sendColor} to='/slides' >Slides</StyledLink>
+          </li>
+          <li>
+            <StyledLink sent={sendColor} to='/running' >Running</StyledLink>
+          </li>
+          <li>
+            <Link className='flex' to='/cart' >
+              <StyledBag size={35}/>
+              <StyledBagSpan istwodigit={getShoeDetails.length} > {getShoeDetails.length !== 0 ? getShoeDetails.length : null}</StyledBagSpan>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div onClick={handleNav} className='block cursor-pointer lg:hidden'>
+      {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+      </div>
     </StyledNav>
     
-    <StyledForSearch usersearched = {filteredResults} isusersearching={isSearching.toString()}>
+    <StyledForSearch 
+      usersearched = {filteredResults} 
+      isusersearching={isSearching.toString()}>
         <div className='flex items-center justify-end mb-8'>
           <button className='text-lg hover:text-footerColor' onClick={searching}>Cancel</button>
         </div>
@@ -141,7 +185,8 @@ const Navbars = ({getShoeDetails,addToCart}) => {
           ))}
         </div>
       </StyledForSearch>
-    </NavbarWrap>
+
+    </>
   )
 }
 
