@@ -37,7 +37,31 @@ body{
 .image #bottom path{
   mix-blend-mode: color;
 }
+.image #smallScreen-containerTop{
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+.image #smallScreen-containerTop path{
+  mix-blend-mode: color;
+}
+.image #smallScreen-containerMid{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image #smallScreen-containerMid path{
+  mix-blend-mode: color;
+}
 
+.image #smallScreen-containerBottom{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image #smallScreen-containerBottom path{
+  mix-blend-mode: color;
+}
 
 /*!!!!!!  */
 

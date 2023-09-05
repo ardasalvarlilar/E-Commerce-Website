@@ -25,18 +25,16 @@ const MyCarousel = () => {
     }, {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         infinite: true,
         autoplay: true,
       }
     }, {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         infinite: true,
         autoplay: true,
-        dots: false,
-        arrows: false
       }
     }]
     

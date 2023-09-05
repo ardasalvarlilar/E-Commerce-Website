@@ -145,8 +145,9 @@ const StyledMainImgDiv = styled.div`
   z-index: 10;
   
   @media (max-width: 768px){
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
+    z-index: 2;
   }
 `
 
@@ -172,15 +173,16 @@ const StyledSpanFirst = styled.h1`
     position: static
   }
   @media (max-width: 	768px) {
-    margin-top: 100px;
-    font-size: 2rem;
-    top: 20px;
+    font-size: 2.5rem;
     left: 100px;
   }
 
   @media (max-width: 640px){
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: 10px;
+    position: absolute;
+    top: 70px;
+    left: 60px;
   }
 `
 
@@ -213,6 +215,7 @@ const StyledSpanSecond = styled.h1`
   @media (max-width: 640px){
     font-size: 2rem;
     letter-spacing: 10px;
+    margin-top: 100px;
   }
 `
 
@@ -246,6 +249,7 @@ const Collection = styled(Link)`
   @media (max-width: 640px){
     font-size: .8rem;
     bottom: 30px;
+    margin-top: 50px;
   }
 `
 // homepage end
@@ -522,6 +526,11 @@ const AlphaflyGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4,1fr);
   column-gap: 1rem;
+
+  @media (max-width: 640px) {
+    column-gap: 0px;
+    row-gap: 0px
+  }
 `
 
 const OwnColorShowDiv = styled.div`
