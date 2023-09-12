@@ -80,7 +80,7 @@ const handleNav = () => {
 
       <div>
         <Link to='/'>
-          <img className='w-12 h-5' src='./commerce-app/img/logo.png'  alt="" />
+          <img className='w-12 h-5' src='./E-Commerce-Website/img/logo.png'  alt="" />
         </Link>
       </div>
       <div>
