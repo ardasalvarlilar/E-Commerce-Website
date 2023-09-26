@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/E-Commerce-Website/static/css/main.5c2e0d19.css",
+    "main.css": "/E-Commerce-Website/static/css/main.75be32b8.css",
     "main.js": "/E-Commerce-Website/static/js/main.3578803b.js",
     "static/media/revicons.eot": "/E-Commerce-Website/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/E-Commerce-Website/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -10,11 +10,11 @@
     "static/media/slick.ttf": "/E-Commerce-Website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/E-Commerce-Website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/E-Commerce-Website/index.html",
-    "main.5c2e0d19.css.map": "/E-Commerce-Website/static/css/main.5c2e0d19.css.map",
+    "main.75be32b8.css.map": "/E-Commerce-Website/static/css/main.75be32b8.css.map",
     "main.3578803b.js.map": "/E-Commerce-Website/static/js/main.3578803b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c2e0d19.css",
+    "static/css/main.75be32b8.css",
     "static/js/main.3578803b.js"
   ]
 }
