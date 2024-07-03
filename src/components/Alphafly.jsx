@@ -56,7 +56,7 @@ const Alphafly = () => {
   useEffect(() => {
     const timeline = gsap.timeline()
     timeline
-    .fromTo(pRef.current, { y: -100, visibility: 'hidden' }, { y: 0, visibility: 'visible', duration: 1 },'+=20')
+    .fromTo(pRef.current, { y: -100, visibility: 'hidden' }, { y: 0, visibility: 'visible', duration: 1 },'+=5')
     .fromTo(buttonRef.current, {x: +100, visibility: 'hidden'}, {x: 0, visibility: 'visible' , duration: 1})
   },[])
 
